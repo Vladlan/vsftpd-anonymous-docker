@@ -1,9 +1,16 @@
 #
 # Dockerfile for vsftpd
 #
-
 FROM alpine:3.7
 MAINTAINER ome-devel@lists.openmicroscopy.org.uk
+
+#set -xe
+# set - Set or unset values of shell options and positional parameters.
+# -x  Print commands and their arguments as they are executed.
+# -e  Exit immediately if a command exits with a non-zero status.
+
+#apk add
+# apk - for installing, upgrading, configuring, and removing apps/programs for an Alpine Linux operating system in a consistent manner.
 
 RUN set -xe \
     && apk add -U vsftpd \
